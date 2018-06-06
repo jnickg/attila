@@ -199,6 +199,14 @@ td,th{
 .ic-googleplus:before{
     content:'\f0d5'
 }
+/* Import of Rock Salt Google Font -jng */
+@font-face {
+  font-family: 'Rock Salt';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rock Salt'), local('RockSalt'), url("../font/RockSalt.woff") format("woff"), url("../font/RockSalt.ttf") format("truetype"), url(https://fonts.gstatic.com/s/rocksalt/v6/Q94aHXFHGip10K5uxi1jOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
 @font-face{
     font-family:'Cardo';
     font-style:normal;
@@ -344,7 +352,8 @@ h1,h2,h3,h4,h5,h6{
     color:#000
 }
 h1{
-    font-size:2em;
+    font-family: 'Rock Salt', 'Fira Sans', sans-serif; /* -jng */
+	font-size:2em;
     line-height:1em;
     text-indent:-1px;
     margin:1em 0 1em
@@ -748,7 +757,10 @@ img[src$="#full"]{
     z-index:10;
     margin:0;
     padding:0;
-    font-family:'Fira Sans', sans-serif;
+	font-family: 'Rock Salt', 'Fira Sans', sans-serif; /* -jng */
+    /* font-family:'Fira Sans', sans-serif; */
+	color: #eeeeee; /* -jng */
+	text-shadow: 2px 2px 2px #2d2d2d; /* -jng */
     font-weight:700;
     font-size:2em;
     line-height:1em;
